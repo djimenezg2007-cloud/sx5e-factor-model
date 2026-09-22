@@ -14,7 +14,7 @@
 
 ![Cumulative return by decile](decile_performance.png)
 
-The result was separated individually and by Deciles. Individually the ~0.14 Spearman Correlation indicates a positive result, where top ranked stocks tended to perform better than low ranked. However, with a single date it does not provide a very reliable one and we can observe that my worst decile beats the top one (due to a surprising performance by Bayer: +73.9%). On the other hand the Decile ~0.21 Spearman Correlation indicates a bigger scramble but a correct direction. With eight equal groups of six stocks it drops to ~0.05, so the bucket result depends heavily on how the stocks are grouped. I will keep running the script on future dates to corroborate the results.
+The result was separated individually and by Deciles. Individually the ~0.14 Spearman Correlation indicates a positive result, where top ranked stocks tended to perform better than low ranked. However, with a single date it does not provide a very reliable one and we can observe that my worst decile beats the top one (due to a surprising performance by Bayer: +73.9%, and falls by Hermes: -32% and Adyen: -34%). On the other hand the Decile ~0.21 Spearman Correlation indicates a bigger scramble but a correct direction. With eight equal groups of six stocks it drops to ~0.05, so the bucket result depends heavily on how the stocks are grouped. I will keep running the script on future dates to corroborate the results.
 
 ## Why point-in-time
 
