@@ -14,7 +14,7 @@
 
 ![Cumulative return by decile](decile_performance.png)
 
-The result was separated individually and by Deciles. Individually the ~0.14 Spearman Correlation indicates a strong result, where top ranked stock tend to perform better than low ranked. However, with a single date it doesnt provide a very reliable one. On the other hand the Decile ~0.21 Spearman Correlation indicates a bigger scramble but a correct direction. With eight equal groups of six stocks it drops to ~0.05, so the bucket result depends heavily on how the stocks are grouped. I will keep running the script in future dates to corroborate the results.
+The result was separated individually and by Deciles. Individually the ~0.14 Spearman Correlation indicates a positive result, where top ranked stocka tended to perform better than low ranked. However, with a single date it does not provide a very reliable one and we can observe that my worst decile beats the top one (due to a surprising performance by Bayer: +73.9%). On the other hand the Decile ~0.21 Spearman Correlation indicates a bigger scramble but a correct direction. With eight equal groups of six stocks it drops to ~0.05, so the bucket result depends heavily on how the stocks are grouped. I will keep running the script on future dates to corroborate the results.
 
 ## Why point-in-time
 
@@ -95,7 +95,7 @@ Parts of this project were built with help from Claude (Anthropic):
 
 - **Data collection:** the FY2024 and FY2023 annual financial statements were gathered by an AI agent (Claude Cowork) using `yfinance`.
 - **Point-in-time preprocessing:** `sx5e_preprocesamiento.py`, which rebuilds the ratios from the raw statements as of the ranking date, was written with Claude.
-- **Debugging and code fixes:** Claude also helped fix file paths, the date cut-off for the backtest and the bucket grouping.
+- **Debugging and code fixes:** Claude also helped fix file paths.
 
 The factor model itself (choice of metrics, factor groups, weights, sector-specific treatment of financials and missing-data handling) and the backtest design are my own work. I have reviewed the AI-written code and can explain how it works.
 
