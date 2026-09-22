@@ -3,9 +3,8 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 
-sx5e_fundamentals = pd.read_csv("C:/Users/djime/Forecasts/Python/sx5e Factor Model/fundamentales_EUROSTOXX50_PIT.csv")
-sx5e_prices = pd.read_csv("C:/Users/djime/Forecasts/Python/sx5e Factor Model/sx5e_prices.csv",
-                  index_col="date", parse_dates=True)
+sx5e_fundamentals = pd.read_csv("fundamentales_EUROSTOXX50_PIT.csv")
+sx5e_prices = pd.read_csv("sx5e_prices.csv", index_col="date", parse_dates=True)
 
 AS_OF = pd.Timestamp("2025-09-08")
 sx5e_prices = sx5e_prices.loc[AS_OF:]
