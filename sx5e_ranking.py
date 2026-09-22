@@ -127,8 +127,6 @@ eurostoxx = sx5e_fundamentals.sort_values("score", ascending=False)
 print(eurostoxx[["ticker", "score"]])
 
 
-# Split into octiles (all 48 stocks)
-
 # Split into deciles (all 48 stocks)
 
 Q1 = eurostoxx[0:5]
